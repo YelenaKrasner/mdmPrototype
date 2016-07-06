@@ -34,5 +34,14 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+        
+    }
+    
+    public void testGetCustomer()
+    {
+    	CustomerService customerService = new CustomerService();
+    	String response = customerService.getCustomer();
+    	assertEquals("Here is your customer", response);
+        assertTrue( true );
     }
 }
